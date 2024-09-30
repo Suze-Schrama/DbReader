@@ -1,18 +1,17 @@
-package be.vdab.dbreader;
+package be.vdab.dbreader.mens;
 
+import be.vdab.dbreader.todo.NieuweToDo;
+import be.vdab.dbreader.todo.ToDo;
 import jakarta.validation.Valid;
 import org.springframework.hateoas.server.EntityLinks;
 import org.springframework.hateoas.server.ExposesResourceFor;
 import org.springframework.hateoas.server.TypedEntityLinks;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.Console;
 import java.time.LocalDateTime;
 import java.util.stream.Stream;
-
 @CrossOrigin
 @RestController
 @RequestMapping("mensen")
@@ -57,4 +56,8 @@ public class MensController {
                 .map(ToDosVanEenMens::new);
     }
 
+    @GetMapping("{id}")
+    Mens findMensById(@PathVariable long id){
+        return mensService.findById(id).orElseThrow(MensNietGevondenException::new);
+    }
 }

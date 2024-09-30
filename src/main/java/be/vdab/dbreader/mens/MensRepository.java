@@ -1,4 +1,4 @@
-package be.vdab.dbreader;
+package be.vdab.dbreader.mens;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,4 +1,4 @@
-package be.vdab.dbreader;
+package be.vdab.dbreader.todo;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

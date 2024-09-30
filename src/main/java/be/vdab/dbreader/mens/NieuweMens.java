@@ -1,4 +1,4 @@
-package be.vdab.dbreader;
+package be.vdab.dbreader.mens;
 
 import jakarta.validation.constraints.NotBlank;
 

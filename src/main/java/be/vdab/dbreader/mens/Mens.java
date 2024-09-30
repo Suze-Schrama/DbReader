@@ -1,8 +1,8 @@
-package be.vdab.dbreader;
+package be.vdab.dbreader.mens;
 
+import be.vdab.dbreader.todo.ToDo;
 import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
